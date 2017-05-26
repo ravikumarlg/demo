@@ -1,0 +1,11 @@
+.idea/
+sample/
+deploy/
+scripts/
+.gitignore
+.npmignore
+.github_changelog_generator
+.travis.yml
+.DS_Store
+Thumbs.db
+npm-debug.log

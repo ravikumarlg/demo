@@ -1,0 +1,55 @@
+{
+  "name": "generator-ngx-rocket",
+  "version": "1.3.0",
+  "description": "Angular 4+ enterprise-grade project generator based on angular-cli with best practices from the community, a scalable starter template and a good learning base.",
+  "repository": "ngx-rocket/generator-ngx-rocket",
+  "keywords": [
+    "yeoman-generator",
+    "ngx",
+    "rocket",
+    "app",
+    "generator",
+    "angular",
+    "angular-cli",
+    "bootstrap",
+    "scalable",
+    "enterprise",
+    "scaffold",
+    "boilerplate",
+    "seed",
+    "typescript",
+    "sass",
+    "mobile",
+    "web"
+  ],
+  "author": "Yohan Lasorsa",
+  "license": "MIT",
+  "preferGlobal": true,
+  "main": "./generators/app/index.js",
+  "scripts": {
+    "lint": "eslint generators/app/*.js",
+    "test": "npm run lint && scripts/test.sh",
+    "deploy": "scripts/deploy.sh",
+    "postpublish": "git tag -a $npm_package_version -m '$npm_package_version' && git push --tags",
+    "changelog": "github_changelog_generator && git add CHANGELOG.md && git commit -m 'Updated changelog' && git push"
+  },
+  "dependencies": {
+    "@ngx-rocket/ascii-logo": "^1.0.0",
+    "@ngx-rocket/core": "^0.9.5",
+    "chalk": "^1.1.1",
+    "insight": "^0.8.4"
+  },
+  "devDependencies": {
+    "eslint": "^3.19.0",
+    "eslint-config-xo-space": "^0.16.0"
+  },
+  "engines": {
+    "node": ">=6.0.0"
+  },
+  "eslintConfig": {
+    "extends": "xo-space/esnext"
+  },
+  "files": [
+    "generators/app"
+  ]
+}

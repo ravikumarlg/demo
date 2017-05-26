@@ -1,0 +1,37 @@
+[
+  {
+    "name": "skip-welcome",
+    "type": "Boolean",
+    "required": false,
+    "desc": "Skip Yeoman's welcome message",
+    "defaults": false
+  },
+  {
+    "name": "update",
+    "type": "Boolean",
+    "required": false,
+    "desc": "Update existing project",
+    "defaults": true
+  },
+  {
+    "name": "analytics",
+    "type": "Boolean",
+    "required": false,
+    "desc": "Report anonymous usage analytics",
+    "defaults": true
+  },
+  {
+    "name": "automate",
+    "type": "String",
+    "required": false,
+    "desc": "Automate prompt answers using the specified JSON file",
+    "defaults": ""
+  },
+  {
+    "name": "addons",
+    "type": "String",
+    "required": false,
+    "desc": "Use specified space-separated addons",
+    "defaults": ""
+  }
+]
